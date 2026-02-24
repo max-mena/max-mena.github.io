@@ -1,10 +1,10 @@
 [
   {
-    "id": "neural-network-efficiency",
-    "title": "Optimizing Neural Network Efficiency",
-    "date": "2025-08-12",
-    "tags": ["AI", "Python", "Data Engineering"],
-    "content_file": "neural-network-efficiency.md"
+    "id": "important_rules_dbt",
+    "title": "Important Rules in DBT",
+    "date": "2026-02-24",
+    "tags": ["DBT", "Data Engineering"],
+    "content_file": "important_rules_dbt.md"
   },
   {
     "id": "quantum-computing-basics",
