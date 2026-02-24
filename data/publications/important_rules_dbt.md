@@ -33,8 +33,8 @@ When adding new columns to a CTE, always verify they are included in the model's
 
 ---
 
-### RULE: Use `systemmodstamp` for Salesforce deduplication, partition by `id`
-Singer uses `systemmodstamp` as the ingestion watermark to determine when to pull new rows from the Salesforce API. Deduplication must order by this column and partition by the entity's own primary key.
+### RULE: Use `correct_date` for Salesforce deduplication, partition by `id`
+Singer uses `correct_date` as the ingestion watermark to determine when to pull new rows from the Salesforce API. Deduplication must order by this column and partition by the entity's own primary key.
 
 ---
 
@@ -143,7 +143,6 @@ dbt test --select path:models/your/model
 
 # Or verify the CI run in the PR Actions tab — all jobs must be green
 ```
-> *"There's still some comments that haven't been addressed. Also you need to address this failing test: `unique_dm_marketing_lcm__b2b_braze_seedlist_email`."*
 
 ---
 
@@ -257,8 +256,6 @@ exposures:
     depends_on:
       - ref('name_of_the_model')
 ```
-> *"Please make the exposure name different than the DM model name. Perhaps something like `braze_b2b_email_subscriptions`?"*
-
 ---
 
 ## 8. 🔗 Migration PRs
