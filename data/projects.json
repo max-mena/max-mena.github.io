@@ -7,11 +7,11 @@
     "content_file": "important_rules_dbt.md"
   },
   {
-    "id": "quantum-computing-basics",
-    "title": "Quantum Computing: The Next Frontier",
+    "id": "ai-coding-augmentation",
+    "title": "Patterns over Prompts: A Framework for Autonomous Engineering",
     "date": "2025-09-05",
-    "tags": ["Quantum", "Future Tech"],
-    "content_file": "quantum-computing-basics.md"
+    "tags": ["Vibe Coding", "Software Development", "AI"],
+    "content_file": "ai-coding-augmentation.md"
   },
   {
     "id": "automated-ci-cd-pipelines",
