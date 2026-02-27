@@ -4,17 +4,17 @@ const { marked } = require('marked');
 
 const dataDir = path.join(__dirname, '../data');
 const templateDir = path.join(__dirname, '../templates');
-const outDir = path.join(__dirname, '../'); 
+const outDir = path.join(__dirname, '../');
 const postsOutDir = path.join(outDir, 'posts');
 
 // Icon + gradient mapping by first tag
 const tagThemes = {
-  'AI':           { icon: '🤖', gradient: 'linear-gradient(135deg, #667eea, #764ba2)' },
-  'Quantum':      { icon: '⚛️',  gradient: 'linear-gradient(135deg, #a18cd1, #fbc2eb)' },
-  'DevOps':       { icon: '⚙️',  gradient: 'linear-gradient(135deg, #43e97b, #38f9d7)' },
-  'IoT':          { icon: '📡', gradient: 'linear-gradient(135deg, #f093fb, #f5576c)' },
-  'Security':     { icon: '🔐', gradient: 'linear-gradient(135deg, #4facfe, #00f2fe)' },
-  'Blockchain':   { icon: '🔗', gradient: 'linear-gradient(135deg, #f6d365, #fda085)' },
+  'ai': { icon: '🤖', gradient: 'linear-gradient(135deg, #667eea, #764ba2)' },
+  'important': { icon: '📌', gradient: 'linear-gradient(135deg, #a18cd1, #fbc2eb)' },
+  'DevOps': { icon: '⚙️', gradient: 'linear-gradient(135deg, #43e97b, #38f9d7)' },
+  'IoT': { icon: '📡', gradient: 'linear-gradient(135deg, #f093fb, #f5576c)' },
+  'Security': { icon: '🔐', gradient: 'linear-gradient(135deg, #4facfe, #00f2fe)' },
+  'Blockchain': { icon: '🔗', gradient: 'linear-gradient(135deg, #f6d365, #fda085)' },
 };
 const defaultTheme = { icon: '📄', gradient: 'linear-gradient(135deg, #e0e0e0, #bdbdbd)' };
 
@@ -45,7 +45,7 @@ projects.forEach(project => {
 
   const outFileName = `${project.id}.html`;
   fs.writeFileSync(path.join(postsOutDir, outFileName), pageHtml);
-  
+
   // 3. Build the Tile string
   const theme = tagThemes[project.tags[0]] || defaultTheme;
   const tagsHtml = project.tags.map(t => `<span class="tile-tag">${t}</span>`).join('');

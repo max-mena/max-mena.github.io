@@ -3,42 +3,21 @@
     "id": "important_rules_dbt",
     "title": "Important Rules in DBT",
     "date": "2026-02-24",
-    "tags": ["DBT", "Data Engineering"],
+    "tags": [
+      "DBT",
+      "Data Engineering"
+    ],
     "content_file": "important_rules_dbt.md"
   },
   {
     "id": "ai-coding-augmentation",
     "title": "Patterns over Prompts: A Framework for Autonomous Engineering",
-    "date": "2025-09-05",
-    "tags": ["Vibe Coding", "Software Development", "AI"],
+    "date": "2026-02-05",
+    "tags": [
+      "Vibe Coding",
+      "Software Development",
+      "AI"
+    ],
     "content_file": "ai-coding-augmentation.md"
-  },
-  {
-    "id": "automated-ci-cd-pipelines",
-    "title": "Automating CI/CD with GitHub Actions",
-    "date": "2025-10-20",
-    "tags": ["DevOps", "Automation", "JavaScript"],
-    "content_file": "automated-ci-cd-pipelines.md"
-  },
-  {
-    "id": "edge-computing-iot",
-    "title": "Edge Computing in IoT Devices",
-    "date": "2025-11-02",
-    "tags": ["IoT", "Edge", "Architecture"],
-    "content_file": "edge-computing-iot.md"
-  },
-  {
-    "id": "cybersecurity-best-practices",
-    "title": "Securing Modern Web Applications",
-    "date": "2025-11-28",
-    "tags": ["Security", "Web Dev"],
-    "content_file": "cybersecurity-best-practices.md"
-  },
-  {
-    "id": "block-chain-scalability",
-    "title": "Solving Blockchain Scalability Issues",
-    "date": "2025-12-15",
-    "tags": ["Blockchain", "FinTech"],
-    "content_file": "block-chain-scalability.md"
   }
 ]
